@@ -1,0 +1,67 @@
+export const projectsData = [
+  {
+    title: "Real-Time Weather Dashboard",
+    desc: "A responsive web application that fetches and displays current weather data for any city worldwide.",
+    tech: ["HTML", "CSS", "Vanilla JavaScript", "OpenWeatherMap API"],
+    href: "https://weather-seven-mu-51.vercel.app/",
+    code: "https://github.com/ambapalidatta/Weather",
+    highlights: [
+      "API Integration",
+      "Asynchronous Programming",
+      "Error Handling",
+    ],
+    imageUrl: "/images/projects/weather.jpg",
+  },
+  {
+    title: "Age Calculator",
+    desc: "A web application that calculates a person's exact age in years, months, and days based on their birthdate input.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    href: "https://age-calculator-gamma-murex.vercel.app/",
+    code: "https://github.com/ambapalidatta/AgeCalculator",
+    highlights: [
+      "Input Validation",
+      "Precise Date Logic",
+      "User-Friendly Interface",
+    ],
+    imageUrl: "/images/projects/ageCalc.jpg",
+  },
+  {
+    title: "Real Estate Website",
+    desc: "A modern real estate platform showcasing properties, services, and client testimonials",
+    tech: ["React", "Tailwind CSS", "JavaScript", "AOS(Animate On Scroll)"],
+    href: "https://real-estate-amba.netlify.app/",
+    code: "https://github.com/ambapalidatta/Real-Estate",
+    highlights: [
+      "Dark/Light Mode Toggle",
+      "Responsive Design",
+      "Interactive Animations",
+      "Comprehensive Sections",
+    ],
+    imageUrl: "/images/projects/realestate.jpg",
+  },
+  {
+    title: "Browser-Based Notes Application",
+    desc: "A simple web app that allows users to create, edit, and delete persistent notes directly in their browser.",
+    tech: ["HTML", "CSS", "Vanilla JavaScript"],
+    href: "https://notes-app-ruddy-beta.vercel.app/",
+    code: "https://github.com/ambapalidatta/NotesApp",
+    highlights: [
+      "Client-Side Data Persistence",
+      "Dynamic Content Manipulation",
+    ],
+    imageUrl: "/images/projects/notes.jpg",
+  },
+  {
+    title: "Interactive To-Do List",
+    desc: "A task management application that allows users to add, mark as complete, and delete tasks.",
+    tech: ["HTML", "CSS", "Vanilla JavaScript"],
+    href: "https://to-do-list-phi-bice.vercel.app/",
+    code: "https://github.com/ambapalidatta/To-Do-List",
+    highlights: [
+      "Classic CRUD Operations",
+      "Visual Feedback",
+      "Data Persistence",
+    ],
+    imageUrl: "/images/projects/todo.jpg",
+  },
+];
