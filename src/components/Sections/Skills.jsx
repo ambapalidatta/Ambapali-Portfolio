@@ -28,13 +28,12 @@ export default function Skills() {
             <h3 className="font-semibold">Frontend</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {[
+                "Java",
                 "HTML5",
                 "CSS3",
-                "Tailwind",
                 "JavaScript(ES6+)",
                 "React.js",
                 "Tailwind CSS",
-                "Bootstrap",
                 "Responsive Web Design",
               ].map((s) => (
                 <Badge key={s}>{s}</Badge>
