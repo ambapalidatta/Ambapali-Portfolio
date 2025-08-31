@@ -17,9 +17,6 @@ export default function Header({ dark, setDark, open, setOpen }) {
               scrollToId("home");
             }}
           >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white">
-              AD
-            </span>
             <span className="font-designer text-3xl bg-gradient-to-r from-fuchsia-500 to-indigo-600 bg-clip-text text-transparent">
               Ambapali Datta
             </span>
