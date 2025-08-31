@@ -41,7 +41,7 @@ import Contact from "./components/Sections/Contact";
 import Footer from "./components/Layout/Footer";
 import BackToTop from "./components/Layout/BackToTop";
 import { useDarkMode } from "./hooks/useDarkMode";
-import Loader from "./components/UI/Loader"; // 👈 create this new component
+import Loader from "./components/UI/Loader";
 
 function App() {
   const [dark, setDark] = useDarkMode();
@@ -49,15 +49,14 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time, replace with actual checks if needed
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Loader will show for 1.5s
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Loader />; // 👈 show loader until project is ready
+    return <Loader />; // show loader until project is ready
   }
 
   return (
