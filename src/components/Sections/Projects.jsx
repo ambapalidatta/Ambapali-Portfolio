@@ -30,7 +30,7 @@ export default function Projects() {
               transition={{ delay: i * 0.1 }}
             >
               <Card className="p-6 h-full flex flex-col group hover:shadow-lg transition-shadow duration-300">
-                {/* Replaced gradient with image */}
+                {/* Image */}
                 <div className="aspect-[16/9] w-full rounded-xl overflow-hidden border relative">
                   <img
                     src={p.imageUrl}
@@ -65,6 +65,7 @@ export default function Projects() {
                     Live <ExternalLink size={16} />
                   </a>
                   <a
+                    target="_blank"
                     href={p.code}
                     className="inline-flex items-center gap-2 rounded-xl bg-zinc-900 px-3 py-2 text-sm text-white dark:bg-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors duration-300"
                   >
