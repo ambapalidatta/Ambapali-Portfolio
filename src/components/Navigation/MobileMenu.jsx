@@ -3,22 +3,6 @@ import Container from "../UI/Container";
 import { navItems } from "../../data/navItems";
 
 export default function MobileMenu({ open, setOpen }) {
-  const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      const headerOffset = 80; // adjust this value = your header height
-      const elementPosition =
-        section.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-    setOpen(false);
-  };
-
   return (
     <AnimatePresence>
       {open && (
@@ -31,13 +15,14 @@ export default function MobileMenu({ open, setOpen }) {
           <Container>
             <div className="flex flex-col py-2">
               {navItems.map((n) => (
-                <button
+                <a
                   key={n.id}
-                  onClick={() => handleScroll(n.id)}
-                  className="text-left px-2 py-3 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 rounded-lg"
+                  href={`#${n.id}`}
+                  className="px-2 py-3 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 rounded-lg"
+                  onClick={() => setOpen(false)}
                 >
                   {n.label}
-                </button>
+                </a>
               ))}
             </div>
           </Container>
